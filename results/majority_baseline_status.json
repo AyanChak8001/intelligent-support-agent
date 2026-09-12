@@ -1,0 +1,16 @@
+{
+  "available": false,
+  "reason": "No separate labeled rows remain after excluding golden evaluation IDs.",
+  "candidates": [
+    {
+      "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\labeled_intent_sample.csv",
+      "labeled_rows": 8,
+      "eligible_rows": 0
+    },
+    {
+      "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\intent_labeling_progress.csv",
+      "labeled_rows": 0,
+      "eligible_rows": 0
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+example_id,true_intent,predicted_intent,action,escalation_reason
+spotify-1007217,APP_TECHNICAL_COMPATIBILITY,DOWNLOADS_OFFLINE_STORAGE,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-1240024,APP_TECHNICAL_COMPATIBILITY,APP_TECHNICAL_COMPATIBILITY,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-1601184,APP_TECHNICAL_COMPATIBILITY,APP_TECHNICAL_COMPATIBILITY,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-1773092,APP_TECHNICAL_COMPATIBILITY,APP_TECHNICAL_COMPATIBILITY,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-1784734,APP_TECHNICAL_COMPATIBILITY,APP_TECHNICAL_COMPATIBILITY,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-1798939,COMMUNITY_INTEGRATIONS,COMMUNITY_INTEGRATIONS,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-1906057,PLAYBACK_AUDIO,PLAYBACK_AUDIO,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-1954789,PLAYLIST_LIBRARY_DISCOVERY,PLAYLIST_LIBRARY_DISCOVERY,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-1964335,ACCOUNT_ACCESS_SECURITY,ACCOUNT_ACCESS_SECURITY,ESCALATE,account/security issues require human handling.
+spotify-1973475,SUBSCRIPTION_PLAN,SUBSCRIPTION_PLAN,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-2431656,COMMUNITY_INTEGRATIONS,COMMUNITY_INTEGRATIONS,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-2582042,OTHER_UNCLEAR,OTHER_UNCLEAR,ESCALATE,the intent is OTHER_UNCLEAR.
+spotify-2623497,SUBSCRIPTION_PLAN,SUBSCRIPTION_PLAN,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-2774667,FEATURE_REQUEST_PRODUCT_FEEDBACK,OTHER_UNCLEAR,ESCALATE,the intent is OTHER_UNCLEAR; intent confidence is Low and the supporting evidence is weak.
+spotify-33423,APP_TECHNICAL_COMPATIBILITY,APP_TECHNICAL_COMPATIBILITY,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-396203,OTHER_UNCLEAR,OTHER_UNCLEAR,ESCALATE,the intent is OTHER_UNCLEAR; intent confidence is Low and the supporting evidence is weak.
+spotify-500973,BILLING_PAYMENT_REFUND,BILLING_PAYMENT_REFUND,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-510537,BILLING_PAYMENT_REFUND,BILLING_PAYMENT_REFUND,AUTO_HANDLE,"specific intent, sufficient confidence, and grounded retrieval evidence are available."
+spotify-853260,PLAYLIST_LIBRARY_DISCOVERY,PLAYLIST_LIBRARY_DISCOVERY,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.
+spotify-946747,PLAYBACK_AUDIO,PLAYBACK_AUDIO,AUTO_HANDLE,specific non-sensitive intent and usable retrieval support a safe information-gathering fallback.

@@ -1,0 +1,557 @@
+{
+  "evaluation_dataset": "C:\\Users\\ayanc\\hiver-sde-assignment\\results\\golden_evaluation_dataset.csv",
+  "data_leakage_note": "Golden final_intent labels are used only as evaluation truth for the rule baseline. The descriptive majority sanity check necessarily uses the same labels to select its constant class and is explicitly not an independent benchmark.",
+  "classifiers": [
+    {
+      "name": "rule_baseline",
+      "available": true,
+      "number_evaluated": 200,
+      "accuracy": 0.91,
+      "macro_f1": 0.8985921479044575,
+      "weighted_f1": 0.9112696760014991,
+      "per_intent": [
+        {
+          "intent": "APP_TECHNICAL_COMPATIBILITY",
+          "precision": 0.9512195121951219,
+          "recall": 1.0,
+          "f1": 0.975,
+          "support": 39
+        },
+        {
+          "intent": "SUBSCRIPTION_PLAN",
+          "precision": 0.84,
+          "recall": 0.9545454545454546,
+          "f1": 0.8936170212765957,
+          "support": 22
+        },
+        {
+          "intent": "BILLING_PAYMENT_REFUND",
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 16
+        },
+        {
+          "intent": "PLAYLIST_LIBRARY_DISCOVERY",
+          "precision": 0.9375,
+          "recall": 0.8823529411764706,
+          "f1": 0.9090909090909091,
+          "support": 17
+        },
+        {
+          "intent": "DOWNLOADS_OFFLINE_STORAGE",
+          "precision": 0.9166666666666666,
+          "recall": 0.8461538461538461,
+          "f1": 0.88,
+          "support": 13
+        },
+        {
+          "intent": "ACCOUNT_ACCESS_SECURITY",
+          "precision": 1.0,
+          "recall": 0.8181818181818182,
+          "f1": 0.9,
+          "support": 11
+        },
+        {
+          "intent": "PLAYBACK_AUDIO",
+          "precision": 0.6428571428571429,
+          "recall": 0.8181818181818182,
+          "f1": 0.72,
+          "support": 11
+        },
+        {
+          "intent": "COMMUNITY_INTEGRATIONS",
+          "precision": 1.0,
+          "recall": 0.875,
+          "f1": 0.9333333333333333,
+          "support": 8
+        },
+        {
+          "intent": "CONTENT_AVAILABILITY_METADATA",
+          "precision": 0.8823529411764706,
+          "recall": 0.8333333333333334,
+          "f1": 0.8571428571428571,
+          "support": 18
+        },
+        {
+          "intent": "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+          "precision": 1.0,
+          "recall": 0.9375,
+          "f1": 0.967741935483871,
+          "support": 16
+        },
+        {
+          "intent": "OTHER_UNCLEAR",
+          "precision": 0.9,
+          "recall": 0.9310344827586207,
+          "f1": 0.9152542372881356,
+          "support": 29
+        }
+      ],
+      "confusion_matrix_labels": [
+        "APP_TECHNICAL_COMPATIBILITY",
+        "SUBSCRIPTION_PLAN",
+        "BILLING_PAYMENT_REFUND",
+        "PLAYLIST_LIBRARY_DISCOVERY",
+        "DOWNLOADS_OFFLINE_STORAGE",
+        "ACCOUNT_ACCESS_SECURITY",
+        "PLAYBACK_AUDIO",
+        "COMMUNITY_INTEGRATIONS",
+        "CONTENT_AVAILABILITY_METADATA",
+        "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+        "OTHER_UNCLEAR"
+      ],
+      "confusion_matrix": [
+        [
+          39,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          14,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          15,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          11,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          9,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          15,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          15,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          27
+        ]
+      ]
+    }
+  ],
+  "baselines": [
+    {
+      "name": "descriptive_majority_sanity_check",
+      "available": true,
+      "number_evaluated": 200,
+      "accuracy": 0.195,
+      "macro_f1": 0.0296690756941803,
+      "weighted_f1": 0.06364016736401674,
+      "per_intent": [
+        {
+          "intent": "APP_TECHNICAL_COMPATIBILITY",
+          "precision": 0.195,
+          "recall": 1.0,
+          "f1": 0.3263598326359833,
+          "support": 39
+        },
+        {
+          "intent": "SUBSCRIPTION_PLAN",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 22
+        },
+        {
+          "intent": "BILLING_PAYMENT_REFUND",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 16
+        },
+        {
+          "intent": "PLAYLIST_LIBRARY_DISCOVERY",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 17
+        },
+        {
+          "intent": "DOWNLOADS_OFFLINE_STORAGE",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 13
+        },
+        {
+          "intent": "ACCOUNT_ACCESS_SECURITY",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        {
+          "intent": "PLAYBACK_AUDIO",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 11
+        },
+        {
+          "intent": "COMMUNITY_INTEGRATIONS",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        {
+          "intent": "CONTENT_AVAILABILITY_METADATA",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 18
+        },
+        {
+          "intent": "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 16
+        },
+        {
+          "intent": "OTHER_UNCLEAR",
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 29
+        }
+      ],
+      "confusion_matrix_labels": [
+        "APP_TECHNICAL_COMPATIBILITY",
+        "SUBSCRIPTION_PLAN",
+        "BILLING_PAYMENT_REFUND",
+        "PLAYLIST_LIBRARY_DISCOVERY",
+        "DOWNLOADS_OFFLINE_STORAGE",
+        "ACCOUNT_ACCESS_SECURITY",
+        "PLAYBACK_AUDIO",
+        "COMMUNITY_INTEGRATIONS",
+        "CONTENT_AVAILABILITY_METADATA",
+        "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+        "OTHER_UNCLEAR"
+      ],
+      "confusion_matrix": [
+        [
+          39,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          22,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          17,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          13,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          11,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          8,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          18,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          16,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "independent_experiment": false,
+      "label_leakage": true,
+      "prediction_policy": "Predict the most frequent final_intent in this same 200-row evaluation dataset for every row.",
+      "majority_intent": "APP_TECHNICAL_COMPATIBILITY",
+      "class_counts_used_to_select_majority": {
+        "APP_TECHNICAL_COMPATIBILITY": 39,
+        "SUBSCRIPTION_PLAN": 22,
+        "BILLING_PAYMENT_REFUND": 16,
+        "PLAYLIST_LIBRARY_DISCOVERY": 17,
+        "DOWNLOADS_OFFLINE_STORAGE": 13,
+        "ACCOUNT_ACCESS_SECURITY": 11,
+        "PLAYBACK_AUDIO": 11,
+        "COMMUNITY_INTEGRATIONS": 8,
+        "CONTENT_AVAILABILITY_METADATA": 18,
+        "FEATURE_REQUEST_PRODUCT_FEEDBACK": 16,
+        "OTHER_UNCLEAR": 29
+      },
+      "methodological_note": "Descriptive class-distribution sanity check only; not a held-out or independently trained baseline."
+    }
+  ],
+  "unavailable_approaches": {
+    "majority_baseline_from_separate_labels": {
+      "available": false,
+      "reason": "No separate labeled rows remain after excluding golden evaluation IDs.",
+      "candidates": [
+        {
+          "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\labeled_intent_sample.csv",
+          "labeled_rows": 8,
+          "eligible_rows": 0
+        },
+        {
+          "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\intent_labeling_progress.csv",
+          "labeled_rows": 0,
+          "eligible_rows": 0
+        }
+      ]
+    },
+    "tfidf_logistic_regression": {
+      "trained": false,
+      "sufficient_separate_labeled_data": false,
+      "eligible_rows": 0,
+      "eligible_intents": [],
+      "details": [
+        {
+          "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\labeled_intent_sample.csv",
+          "label_column": "final_intent",
+          "labeled_rows": 8,
+          "eligible_non_golden_rows": 0,
+          "eligible_intents": []
+        },
+        {
+          "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\intent_labeling_progress.csv",
+          "label_column": "final_intent",
+          "labeled_rows": 0,
+          "eligible_non_golden_rows": 0,
+          "eligible_intents": []
+        }
+      ],
+      "reason": "No legitimate separate labeled training data is available; no TF-IDF/logistic-regression model was trained."
+    }
+  }
+}

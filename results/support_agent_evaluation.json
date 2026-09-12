@@ -1,0 +1,487 @@
+{
+  "evaluation_dataset": "C:\\Users\\ayanc\\hiver-sde-assignment\\results\\golden_evaluation_dataset.csv",
+  "intent_classification": {
+    "name": "rule_baseline",
+    "available": true,
+    "number_evaluated": 200,
+    "accuracy": 0.91,
+    "macro_f1": 0.8985921479044575,
+    "weighted_f1": 0.9112696760014991,
+    "per_intent": [
+      {
+        "intent": "APP_TECHNICAL_COMPATIBILITY",
+        "precision": 0.9512195121951219,
+        "recall": 1.0,
+        "f1": 0.975,
+        "support": 39
+      },
+      {
+        "intent": "SUBSCRIPTION_PLAN",
+        "precision": 0.84,
+        "recall": 0.9545454545454546,
+        "f1": 0.8936170212765957,
+        "support": 22
+      },
+      {
+        "intent": "BILLING_PAYMENT_REFUND",
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333333333333333,
+        "support": 16
+      },
+      {
+        "intent": "PLAYLIST_LIBRARY_DISCOVERY",
+        "precision": 0.9375,
+        "recall": 0.8823529411764706,
+        "f1": 0.9090909090909091,
+        "support": 17
+      },
+      {
+        "intent": "DOWNLOADS_OFFLINE_STORAGE",
+        "precision": 0.9166666666666666,
+        "recall": 0.8461538461538461,
+        "f1": 0.88,
+        "support": 13
+      },
+      {
+        "intent": "ACCOUNT_ACCESS_SECURITY",
+        "precision": 1.0,
+        "recall": 0.8181818181818182,
+        "f1": 0.9,
+        "support": 11
+      },
+      {
+        "intent": "PLAYBACK_AUDIO",
+        "precision": 0.6428571428571429,
+        "recall": 0.8181818181818182,
+        "f1": 0.72,
+        "support": 11
+      },
+      {
+        "intent": "COMMUNITY_INTEGRATIONS",
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1": 0.9333333333333333,
+        "support": 8
+      },
+      {
+        "intent": "CONTENT_AVAILABILITY_METADATA",
+        "precision": 0.8823529411764706,
+        "recall": 0.8333333333333334,
+        "f1": 0.8571428571428571,
+        "support": 18
+      },
+      {
+        "intent": "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+        "precision": 1.0,
+        "recall": 0.9375,
+        "f1": 0.967741935483871,
+        "support": 16
+      },
+      {
+        "intent": "OTHER_UNCLEAR",
+        "precision": 0.9,
+        "recall": 0.9310344827586207,
+        "f1": 0.9152542372881356,
+        "support": 29
+      }
+    ],
+    "confusion_matrix_labels": [
+      "APP_TECHNICAL_COMPATIBILITY",
+      "SUBSCRIPTION_PLAN",
+      "BILLING_PAYMENT_REFUND",
+      "PLAYLIST_LIBRARY_DISCOVERY",
+      "DOWNLOADS_OFFLINE_STORAGE",
+      "ACCOUNT_ACCESS_SECURITY",
+      "PLAYBACK_AUDIO",
+      "COMMUNITY_INTEGRATIONS",
+      "CONTENT_AVAILABILITY_METADATA",
+      "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+      "OTHER_UNCLEAR"
+    ],
+    "confusion_matrix": [
+      [
+        39,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        21,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        14,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        15,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        11,
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        9,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        9,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        7,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        15,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        27
+      ]
+    ]
+  },
+  "end_to_end": {
+    "sample_size": 20,
+    "sample_seed": 42,
+    "top_k": 3,
+    "sample_example_ids": [
+      "spotify-1007217",
+      "spotify-1240024",
+      "spotify-1601184",
+      "spotify-1773092",
+      "spotify-1784734",
+      "spotify-1798939",
+      "spotify-1906057",
+      "spotify-1954789",
+      "spotify-1964335",
+      "spotify-1973475",
+      "spotify-2431656",
+      "spotify-2582042",
+      "spotify-2623497",
+      "spotify-2774667",
+      "spotify-33423",
+      "spotify-396203",
+      "spotify-500973",
+      "spotify-510537",
+      "spotify-853260",
+      "spotify-946747"
+    ],
+    "reference_labels_used_only_for_evaluation": true,
+    "predicted_intent_accuracy_on_sample": 0.9,
+    "action_counts": {
+      "AUTO_HANDLE": 16,
+      "ESCALATE": 4
+    },
+    "auto_handle_count": 16,
+    "escalate_count": 4,
+    "auto_handle_percentage": 80.0,
+    "escalate_percentage": 20.0,
+    "fallback_count": 10,
+    "reply_quality_checks": {
+      "reply_nonempty_when_auto_handle": {
+        "passed": 20,
+        "total": 20
+      },
+      "no_obvious_url_or_email_leak": {
+        "passed": 20,
+        "total": 20
+      },
+      "no_obvious_account_identifier_leak": {
+        "passed": 20,
+        "total": 20
+      },
+      "basic_grounding_signal_present": {
+        "passed": 8,
+        "total": 20
+      },
+      "no_customer_reply_when_escalated": {
+        "passed": 20,
+        "total": 20
+      }
+    },
+    "reply_quality_check_note": "These are deterministic automated checks, not human judgments of reply quality.",
+    "escalation_reason_counts": {
+      "account/security issues require human handling.": 1,
+      "the intent is OTHER_UNCLEAR.": 1,
+      "the intent is OTHER_UNCLEAR; intent confidence is Low and the supporting evidence is weak.": 2
+    },
+    "escalation_by_predicted_intent": [
+      {
+        "predicted_intent": "ACCOUNT_ACCESS_SECURITY",
+        "cases": 1,
+        "escalated": 1,
+        "auto_handle": 0,
+        "escalation_percentage": 100.0
+      },
+      {
+        "predicted_intent": "APP_TECHNICAL_COMPATIBILITY",
+        "cases": 5,
+        "escalated": 0,
+        "auto_handle": 5,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "BILLING_PAYMENT_REFUND",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "COMMUNITY_INTEGRATIONS",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "DOWNLOADS_OFFLINE_STORAGE",
+        "cases": 1,
+        "escalated": 0,
+        "auto_handle": 1,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "OTHER_UNCLEAR",
+        "cases": 3,
+        "escalated": 3,
+        "auto_handle": 0,
+        "escalation_percentage": 100.0
+      },
+      {
+        "predicted_intent": "PLAYBACK_AUDIO",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "PLAYLIST_LIBRARY_DISCOVERY",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "predicted_intent": "SUBSCRIPTION_PLAN",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      }
+    ],
+    "escalation_by_true_intent": [
+      {
+        "true_intent": "ACCOUNT_ACCESS_SECURITY",
+        "cases": 1,
+        "escalated": 1,
+        "auto_handle": 0,
+        "escalation_percentage": 100.0
+      },
+      {
+        "true_intent": "APP_TECHNICAL_COMPATIBILITY",
+        "cases": 6,
+        "escalated": 0,
+        "auto_handle": 6,
+        "escalation_percentage": 0.0
+      },
+      {
+        "true_intent": "BILLING_PAYMENT_REFUND",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "true_intent": "COMMUNITY_INTEGRATIONS",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "true_intent": "FEATURE_REQUEST_PRODUCT_FEEDBACK",
+        "cases": 1,
+        "escalated": 1,
+        "auto_handle": 0,
+        "escalation_percentage": 100.0
+      },
+      {
+        "true_intent": "OTHER_UNCLEAR",
+        "cases": 2,
+        "escalated": 2,
+        "auto_handle": 0,
+        "escalation_percentage": 100.0
+      },
+      {
+        "true_intent": "PLAYBACK_AUDIO",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "true_intent": "PLAYLIST_LIBRARY_DISCOVERY",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      },
+      {
+        "true_intent": "SUBSCRIPTION_PLAN",
+        "cases": 2,
+        "escalated": 0,
+        "auto_handle": 2,
+        "escalation_percentage": 0.0
+      }
+    ]
+  },
+  "overlap_analysis": {
+    "dataset": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\processed\\spotify_customer_support_pairs_clean.csv",
+    "source_rows": 41622,
+    "valid_rows": 41622,
+    "golden_id_overlap_rows": 213,
+    "golden_id_overlap_unique_ids": 200,
+    "exact_customer_message_overlap_rows": 221,
+    "exact_self_retrieval_prevented": true,
+    "filtered_rows_removed": 213,
+    "error": null
+  },
+  "protected_artifact_hashes": {
+    "golden_dataset": {
+      "before": "92c02631ac871a3ff7d4d0fe43a2240ffd9b8b4e3aa97bd1e432624411a33082",
+      "after": "92c02631ac871a3ff7d4d0fe43a2240ffd9b8b4e3aa97bd1e432624411a33082",
+      "unchanged": true
+    },
+    "golden_metadata": {
+      "before": "f17a426f565a9046390b85224a7b1f33a30b9071718b6d0e5d5df095bc9fb979",
+      "after": "f17a426f565a9046390b85224a7b1f33a30b9071718b6d0e5d5df095bc9fb979",
+      "unchanged": true
+    },
+    "review_progress": {
+      "before": "92c02631ac871a3ff7d4d0fe43a2240ffd9b8b4e3aa97bd1e432624411a33082",
+      "after": "92c02631ac871a3ff7d4d0fe43a2240ffd9b8b4e3aa97bd1e432624411a33082",
+      "unchanged": true
+    }
+  },
+  "reproducibility": {
+    "fixed_seed": 42,
+    "sample_order_is_sorted_by_example_id": true,
+    "outputs_have_no_timestamp_fields": true,
+    "rerun_with_same_seed_should_match": true
+  },
+  "safety_and_limitations": [
+    "The golden final_intent labels are never passed to the support agent and are used only as evaluation truth.",
+    "The end-to-end sample is deterministic; full intent metrics cover all 200 examples.",
+    "Exact golden conversation IDs are removed from the temporary retrieval corpus where IDs are available, but exact customer-message overlap and broader source overlap may remain.",
+    "The rule baseline was developed using prior inspection of golden examples, so its metrics may be optimistic rather than a blind benchmark.",
+    "Automated reply checks do not establish human helpfulness, correctness, tone, or agreement.",
+    "No LLM-as-a-judge, human reply evaluation, or human-versus-LLM agreement study was run."
+  ],
+  "retrieval_dataset": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\processed\\spotify_customer_support_pairs_clean.csv"
+}

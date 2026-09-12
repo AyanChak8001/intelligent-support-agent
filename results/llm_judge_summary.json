@@ -1,0 +1,28 @@
+{
+  "total_examples": 16,
+  "successfully_judged_examples": 16,
+  "failed_examples": 0,
+  "average_score_per_criterion": {
+    "helpfulness_score": 2.6875,
+    "correctness_score": 3.6875,
+    "relevance_score": 3.5,
+    "tone_score": 4.4375,
+    "safety_score": 5.0,
+    "overall_score": 2.8125
+  },
+  "overall_average": 2.8125,
+  "model_used": "gemini-3.5-flash",
+  "models_used": [
+    "gemini-3.5-flash"
+  ],
+  "deterministic_configuration": {
+    "temperature": 0.0,
+    "structured_json_schema": true
+  },
+  "results_file": "C:\\Users\\ayanc\\hiver-sde-assignment\\results\\llm_judge_results.csv",
+  "limitations": [
+    "LLM scores are independent model judgments, not ground truth.",
+    "Agreement is measured against one human evaluator's completed scores.",
+    "Failed or malformed responses are excluded from averages and agreement."
+  ]
+}

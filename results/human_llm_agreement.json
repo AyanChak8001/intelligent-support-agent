@@ -1,0 +1,48 @@
+{
+  "human_source_file": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\human_reply_evaluation_template.csv",
+  "llm_results_file": "C:\\Users\\ayanc\\hiver-sde-assignment\\results\\llm_judge_results.csv",
+  "matched_examples": 16,
+  "criteria": {
+    "helpfulness_score": {
+      "exact_agreement_rate": 0.1875,
+      "mean_absolute_error": 0.9375,
+      "average_signed_difference_llm_minus_human": -0.3125,
+      "weighted_cohen_kappa": null
+    },
+    "correctness_score": {
+      "exact_agreement_rate": 0.1875,
+      "mean_absolute_error": 1.1875,
+      "average_signed_difference_llm_minus_human": -0.3125,
+      "weighted_cohen_kappa": null
+    },
+    "relevance_score": {
+      "exact_agreement_rate": 0.0625,
+      "mean_absolute_error": 1.375,
+      "average_signed_difference_llm_minus_human": -0.5,
+      "weighted_cohen_kappa": null
+    },
+    "tone_score": {
+      "exact_agreement_rate": 0.625,
+      "mean_absolute_error": 0.5625,
+      "average_signed_difference_llm_minus_human": -0.5625,
+      "weighted_cohen_kappa": null
+    },
+    "safety_score": {
+      "exact_agreement_rate": 1.0,
+      "mean_absolute_error": 0.0,
+      "average_signed_difference_llm_minus_human": 0.0,
+      "weighted_cohen_kappa": null
+    },
+    "overall_score": {
+      "exact_agreement_rate": 0.4375,
+      "mean_absolute_error": 1.1875,
+      "average_signed_difference_llm_minus_human": -1.1875,
+      "weighted_cohen_kappa": null
+    }
+  },
+  "limitations": [
+    "Agreement is descriptive and does not establish which judge is correct.",
+    "The human reference contains one evaluator and a homogeneous 16-example sample.",
+    "Kappa is omitted when its dependency is unavailable or no valid matched examples exist."
+  ]
+}

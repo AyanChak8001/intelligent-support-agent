@@ -1,0 +1,64 @@
+{
+  "source_file": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\human_reply_evaluation_template.csv",
+  "total_template_rows": 16,
+  "completed_human_evaluations": 16,
+  "incomplete_evaluations": 0,
+  "incomplete_evaluation_ids": [],
+  "invalid_score_count": 0,
+  "invalid_scores": [],
+  "score_scale": "1-5 integer scores; aggregates include only reviewed=true rows with all six scores valid",
+  "average_score_by_criterion": {
+    "helpfulness_score": 3.0,
+    "correctness_score": 4.0,
+    "relevance_score": 4.0,
+    "tone_score": 5.0,
+    "safety_score": 5.0,
+    "overall_score": 4.0
+  },
+  "score_distribution": {
+    "helpfulness_score": {
+      "1": 0,
+      "2": 0,
+      "3": 16,
+      "4": 0,
+      "5": 0
+    },
+    "correctness_score": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 16,
+      "5": 0
+    },
+    "relevance_score": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 16,
+      "5": 0
+    },
+    "tone_score": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 16
+    },
+    "safety_score": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 16
+    },
+    "overall_score": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 16,
+      "5": 0
+    }
+  },
+  "overall_average": 4.0,
+  "status": "completed_reviews_available"
+}

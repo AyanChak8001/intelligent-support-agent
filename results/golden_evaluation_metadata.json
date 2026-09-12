@@ -1,0 +1,16 @@
+{
+  "dataset_name": "golden_evaluation_dataset",
+  "sample_size": 200,
+  "created_at_utc": "2026-09-11T12:57:51.531482+00:00",
+  "number_reviewed_examples": 200,
+  "number_explicit_human_labels": 200,
+  "number_human_approved": 1,
+  "number_human_overridden": 199,
+  "label_action_distribution": {
+    "human_approved_suggestion": 1,
+    "human_override": 199
+  },
+  "golden_dataset_ready": true,
+  "golden_dataset_file": "results/golden_evaluation_dataset.csv",
+  "labeling_note": "Golden dataset exported from 200 explicitly human-reviewed decisions. Automatic suggestions remain separate from human labels."
+}

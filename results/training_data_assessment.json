@@ -1,0 +1,23 @@
+{
+  "trained": false,
+  "sufficient_separate_labeled_data": false,
+  "eligible_rows": 0,
+  "eligible_intents": [],
+  "details": [
+    {
+      "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\labeled_intent_sample.csv",
+      "label_column": "final_intent",
+      "labeled_rows": 8,
+      "eligible_non_golden_rows": 0,
+      "eligible_intents": []
+    },
+    {
+      "path": "C:\\Users\\ayanc\\hiver-sde-assignment\\data\\evaluation\\intent_labeling_progress.csv",
+      "label_column": "final_intent",
+      "labeled_rows": 0,
+      "eligible_non_golden_rows": 0,
+      "eligible_intents": []
+    }
+  ],
+  "reason": "No legitimate separate labeled training data is available; no TF-IDF/logistic-regression model was trained."
+}
