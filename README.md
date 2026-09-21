@@ -2,9 +2,11 @@
 
 ## Project Overview
 
-This project implements a Spotify customer-support agent for the Hiver SDE Intern Assignment. Given a customer message, the agent classifies the support intent, retrieves similar historical support conversations, drafts a safe response grounded in the retrieved evidence, and decides whether the case can be handled automatically or should be escalated to a human.
+An explainable customer-support agent that processes customer messages, identifies support intent, retrieves relevant historical conversations, generates grounded responses, and determines whether a case can be handled automatically or should be escalated to a human.
 
-The implementation is deliberately explainable and deterministic. Intent classification uses rules, retrieval uses TF-IDF cosine similarity, and reply generation extracts supportable next-step patterns rather than copying historical replies or calling an LLM. The evaluation harness keeps the reviewed 200-example golden dataset as evaluation truth only.
+The system is designed around deterministic, explainable components rather than opaque end-to-end generation. Intent classification uses rule-based logic, retrieval uses TF-IDF with cosine similarity, and response generation extracts supportable next-step patterns from relevant historical conversations rather than directly copying previous replies or relying on an external LLM.
+
+The project also includes an evaluation framework with a human-reviewed dataset, automated quality checks, escalation analysis, and structured evaluation outputs for measuring system behavior and identifying failure cases.
 
 ## Problem Framing
 
@@ -308,20 +310,11 @@ Therefore, `0.91` is a useful measured intent-classification result under this e
 - The LLM judge is an evaluator, not ground truth. Its scores and agreement can vary with model availability, quota behavior, model version, and rubric interpretation.
 - The rule baseline was developed after inspecting the evaluation workflow, so its benchmark may be optimistic rather than blind.
 
-## What I Would Do With One More Week
+## Future Improvements
 
-With one additional week, I would prioritize improvements based on the measured failure analysis rather than adding features purely for scope:
+Based on the observed evaluation results and failure analysis, potential improvements include:
 
-1. Review the observed intent confusion pairs and add regression tests before changing classification rules.
-
-2. Replace or augment lexical TF-IDF retrieval with semantic retrieval and evaluate whether evidence relevance improves on a leakage-controlled corpus.
-
-3. Add retrieval diagnostics for evidence relevance and action-support coverage, then use validated evidence gates.
-
-4. Expand safe action extraction and create intent-specific fallback templates for common support scenarios.
-
-5. Measure escalation precision and downstream resolution outcomes before relaxing safety safeguards.
-
-6. Add multiple independent human evaluators and adjudicated examples to make agreement metrics more meaningful.
-
-7. Calibrate the Gemini judge using rubric anchors and disagreement review instead of treating LLM scores as ground truth.
+Add regression tests for recurring intent-confusion cases before modifying classification rules.
+Evaluate semantic retrieval alongside TF-IDF to determine whether evidence relevance improves on a leakage-controlled corpus.
+Add retrieval diagnostics to measure evidence relevance and action-support coverage.
+Expand safe action extraction and introduce intent-specific fallback strategies for common support scenarios.
